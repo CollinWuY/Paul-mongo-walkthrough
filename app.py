@@ -4,6 +4,8 @@ from bson.objectid import ObjectId
 import pymongo
 import os
 
+import os.urandom(24)
+
 load_dotenv()
 # print(os.environ.get("MONGO_URL")) #double check connection to MongoDB
 MONGO_URL = os.environ.get('MONGO_URL')
