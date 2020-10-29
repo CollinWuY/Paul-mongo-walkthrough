@@ -1,0 +1,10 @@
+{% extends 'base.template.html'%}
+
+{%block content%}
+
+<h1> Displaying Search Results </h1>
+<p> Searching by{{", ".join(searched_by)}} </p>
+
+{% include 'animal_listings.template.html' %} 
+
+{%endblock%}

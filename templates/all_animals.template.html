@@ -1,0 +1,10 @@
+{%extends 'base.template.html'%} 
+
+{%block content%}
+<div class= "container">
+    <a href="{{url_for('show_create_animal') }}" class="btn btn-success my-3">Add New Animal</a>
+    <a href="{{url_for('show_search_form') }}" class="btn btn-info my-3">Search For Animal</a>
+</div>
+{% include 'animal_listings.template.html' %} 
+
+{%endblock%}

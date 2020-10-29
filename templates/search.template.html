@@ -1,0 +1,23 @@
+{%extends 'base.template.html'%}
+
+{%block content%}
+<form method="POST">
+    <div class="row">
+        <div class="col">
+            <label>Country</label>
+            <input type="text" class="form-control" name="animal_name"/>
+        </div>
+        <div class="col">
+            <label>Species</label>
+            <input type="text" class="form-control" name="species"/>
+        </div>
+        <div class="col">
+            <input type="checkbox" name="tags" class="mr-2" value="cat-friendly"/>Cat Friendly
+            <input type="checkbox" name="tags" class="mr-2" value="adorable">Adorable
+            <input type="checkbox" name="tags" class="mr-2" value="housebroken"/>House Broken
+        </div>
+        <input type="submit" value ="Search" class="btn btn-primary mt-3"/>
+    </div>
+</form>
+
+{%endblock%}
